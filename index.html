@@ -1,113 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Yuritzy, la lady in my life - Libro interactivo</title>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Turn.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Yuritzy</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
 
-<style>
-  body {
-    margin: 0; padding: 0;
-    background: #fff0f5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  #flipbook {
-    width: 700px;
-    height: 450px;
-    margin: 50px auto;
-  }
-  #flipbook .page {
-    width: 350px;
-    height: 450px;
-    background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    padding: 2rem;
-    box-sizing: border-box;
-    color: #5a1e44;
-    user-select: none;
-  }
-  h1, h2 {
-    color: #d36ca3;
-    margin-top: 0;
-  }
-  p {
-    font-size: 1.1rem;
-    line-height: 1.4;
-  }
-  button {
-    background-color: #d36ca3;
-    border: none;
-    color: white;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 1.5rem;
-    user-select: none;
-  }
-  button:hover {
-    background-color: #bf5c8f;
-  }
-  /* Centrar texto final */
-  .final-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
+    #flipbook {
+      width: 800px;
+      height: 500px;
+    }
+
+    .page {
+      width: 400px;
+      height: 500px;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 30px;
+      box-sizing: border-box;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
+  <div id="flipbook">
+    <div class="page">
+      <h1>Hola Yuritzy</h1>
+      <p>Desde que te conocí, todo en mi vida cambió para mejor...</p>
+    </div>
+    <div class="page">
+      <h2>¿Sabes algo?</h2>
+      <p>No dejo de pensar en ti, en todo lo bonito que hemos compartido.</p>
+    </div>
+    <div class="page">
+      <h2>Eres especial</h2>
+      <p>Tu risa, tu voz, tu forma de ver la vida... me encantas.</p>
+    </div>
+    <div class="page">
+      <h2>Yuritzy...</h2>
+      <p>¿Quieres ser mi novia?</p>
+    </div>
+  </div>
 
-<div id="flipbook">
-  <div class="page">
-    <h1>Yuritzy, la lady in my life</h1>
-    <p>Una historia de amor a distancia que quiere ser novios</p>
-  </div>
-  <div class="page">
-    <h2>El inicio</h2>
-    <p>Desde que llegaste, algo cambió. No sé si fue tu voz, tu risa o esa forma tan única de mirarme… incluso a través de una pantalla.</p>
-  </div>
-  <div class="page">
-    <h2>Momentos que atesoro</h2>
-    <p>Las charlas eternas, las risas tontas, los silencios cómodos… cada momento contigo se siente especial. Y aunque estemos lejos, me haces sentir más cerca que nadie.</p>
-  </div>
-  <div class="page">
-    <h2>Lo que siento por ti</h2>
-    <p>No hay forma de ocultarlo: me encantas. Me encantas tú, tu forma de ver la vida, tu dulzura, tu fuerza, y cómo haces que todo tenga sentido.</p>
-  </div>
-  <div class="page">
-    <h2>La canción</h2>
-    <p>Hay una canción que me hace pensar en ti cada vez que la escucho…</p>
-    <button onclick="window.open('https://www.youtube.com/watch?v=Zp3NqllYJqE', '_blank')">Escuchar "The Lady in My Life"</button>
-  </div>
-  <div class="page final-page">
-    <h2>La pregunta</h2>
-    <p style="font-size: 1.5rem; font-weight: bold;">Yuritzy… ¿Quieres ser mi novia?</p>
-  </div>
-</div>
-
-<script>
-  $(document).ready(function(){
-    $("#flipbook").turn({
-      width: 700,
-      height: 450,
-      autoCenter: true,
-      elevation: 50,
-      gradients: true,
-      acceleration: true
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@master/lib/turn.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#flipbook").turn({
+        width: 800,
+        height: 500,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true,
+        duration: 1000
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
