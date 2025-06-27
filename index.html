@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Yuritzy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #ffe5ec;
+      --page-bg: #ffffff;
+      --text-color: #333;
+      --accent-color: #ff85a2;
+      --accent-hover: #d6336c;
+      --header-color: #fff;
+      --footer-bg: #fff0f6;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.5s, color 0.5s;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 20px;
+      background-image: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: var(--header-color);
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 70px;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .book {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--page-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+      position: relative;
+      transition: background 0.5s;
+    }
+
+    .page {
+      display: none;
+      padding: 50px;
+      font-size: 22px;
+      line-height: 1.8;
+      text-align: justify;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .controls {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .controls button,
+    #modo-btn {
+      background: linear-gradient(to right, var(--accent-color), #ffb6c1);
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(214, 51, 108, 0.4);
+    }
+
+    .controls button:hover,
+    #modo-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(214, 51, 108, 0.6);
+    }
+
+    .pregunta {
+      text-align: center;
+      font-size: 80px;
+      font-family: 'Great Vibes', cursive;
+      margin-top: 100px;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+      background-color: var(--footer-bg);
+      color: var(--text-color);
+      transition: background 0.5s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+.respuestas {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.respuestas button {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.respuestas button:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yuritzy...</h1>
+  </header>
+
+  <div class="book">
+    <div class="page active">
+      <p>Desde el primer momento en que te vi, supe que había algo especial en ti. Tal vez en ese instante no lo comprendí del todo, pero mi corazón ya lo sabía.</p>
+    </div>
+
+    <div class="page">
+      <p>Con el tiempo pasaron muchas cosas, y fui entendiendo que no fue casualidad haberte conocido. Volverte a ver hizo que reviviera esa sensación que creí olvidada… Pero fue al bailar contigo cuando realmente lo sentí: ese momento en que todo alrededor desaparece y solo quedamos tú y yo, y no es necesario que explique lo que sentí cuando me diste la flor ¿verdad? jajaja</p>
+    </div>
+
+    <div class="page">
+      <p>Irte conociendo ha sido como descubrir un libro que no quieres dejar de leer. Cada palabra, cada gesto tuyo, me deja con más ganas de saber quién eres realmente. Y mientras más te conozco, más me convenzo de que quiero quedarme, que quiero ser parte de tu historia… no por un rato, sino por mucho tiempo. (Toda la vida)</p>
+    </div>
+
+    <div class="page">
+      <p>Incluso el que dejáramos de hablar por un tiempo, y luego volviéramos a encontrarnos, me hizo darme cuenta de algo muy fuerte: lo que siento por ti no desapareció, solo estaba ahí, esperando el momento de volver a surgir. Y cuando resurgió, fue con más fuerza, como si el tiempo no hubiera pasado. Eso me dice que esto que siento no es cualquier cosa… que hay algo real, algo que simplemente no se puede explicar con palabras, pero que se siente con el corazón.</p>
+    </div>
+
+    <div class="page">
+      <p>Aunque la distancia nos separe físicamente, siento tu presencia en cada instante. Tu forma de ser, tu dulzura, tu alegría… han iluminado mi mundo de una forma que nunca imaginé posible. Estás en mis pensamientos, en mis sonrisas, y en cada pequeño detalle que me recuerda a ti.</p>
+    </div>
+
+    <div class="page">
+      <p>Eres esa persona que me inspira a ser mejor, la que me hace soñar, reír y desear construir algo verdadero. Siento que todo encaja cuando estoy contigo, incluso a través de una pantalla. Y sé, con el corazón, que en un futuro estaremos muy cerca, más unidos que nunca… y que jamás volveremos a estar lejos el uno del otro.</p>
+    </div>
+
+    <div class="page">
+      <p>Por eso hoy, con todo mi corazón, quiero hacerte una pregunta que me llena de emoción, de ilusión y esperanza...</p>
+    </div>
+
+    <div class="page">
+      <div class="pregunta">¿Puedo ser tu novio? 💖</div>
+      <div class="respuestas">
+         <button onclick="responder('¡Sabía que dirías que sí mi cachetona hermosa! ❤️')">Sí</button>
+         <button onclick="responder('¡Obvio que sí! 😍 Me haces el más feliz mi lady')">¡Obvio que sí!</button>
+      </div>
+  </div>
+
+  <div class="controls" id="controls">
+    <button id="btn-prev" onclick="cambiarPagina(-1)">Regresar</button>
+    <button id="btn-next" onclick="cambiarPagina(1)">Continuar</button>
+  </div>
+
+  <div style="text-align:center; padding: 20px;">
+    <button onclick="toggleModo()" id="modo-btn">🌙 Activar modo noche</button>
+  </div>
+
+  <footer>
+    Hecho con todo mi amor para ti, Yuritzy
+  </footer>
+
+  <script>
+    let paginaActual = 0;
+    const paginas = document.querySelectorAll('.page');
+    const controls = document.getElementById('controls');
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+
+    function cambiarPagina(direccion) {
+      paginas[paginaActual].classList.remove('active');
+      paginaActual = Math.max(0, Math.min(paginaActual + direccion, paginas.length - 1));
+      paginas[paginaActual].classList.add('active');
+
+      if (paginaActual === paginas.length - 1) {
+        controls.style.display = 'none';
+      } else {
+        controls.style.display = 'block';
+      }
+
+      btnPrev.style.display = (paginaActual === 0) ? 'none' : 'inline-block';
+    }
+
+    window.onload = () => {
+      btnPrev.style.display = 'none';
+    };
+
+    let noche = false;
+    function toggleModo() {
+      noche = !noche;
+      const root = document.documentElement;
+      const btn = document.getElementById('modo-btn');
+
+      if (noche) {
+        root.style.setProperty('--bg-color', '#1e1b2e');
+        root.style.setProperty('--page-bg', '#2e294e');
+        root.style.setProperty('--text-color', '#ffffff');
+        root.style.setProperty('--accent-color', '#ff4081');
+        root.style.setProperty('--accent-hover', '#ff85a2');
+        root.style.setProperty('--footer-bg', '#2e294e');
+        btn.innerText = '🌞';
+      } else {
+        root.style.setProperty('--bg-color', '#ffe5ec');
+        root.style.setProperty('--page-bg', '#ffffff');
+        root.style.setProperty('--text-color', '#333333');
+        root.style.setProperty('--accent-color', '#ff85a2');
+        root.style.setProperty('--accent-hover', '#d6336c');
+        root.style.setProperty('--footer-bg', '#fff0f6');
+        btn.innerText = '🌙';
+      }
+    }
+function responder(mensaje) {
+  alert(mensaje);
+}
+
+  </script>
+</body>
+</html>
